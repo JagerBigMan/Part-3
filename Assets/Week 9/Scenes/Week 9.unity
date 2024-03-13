@@ -1373,6 +1373,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   animator: {fileID: 6491913701516345902}
+  whoCanOpen: 2
 --- !u!1001 &676232074
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2374,6 +2375,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   animator: {fileID: 6491913701707544840}
+  whoCanOpen: 0
 --- !u!1 &1322579541
 GameObject:
   m_ObjectHideFlags: 0
@@ -3647,6 +3649,37 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4798532672243395373, guid: 838a9c74e6cba734faec44d9be3b765e, type: 3}
   m_PrefabInstance: {fileID: 2065342031}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &2116489276
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2116489277}
+  m_Layer: 0
+  m_Name: spawnPoint
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2116489277
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2116489276}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: 0.45080304, w: 0.8926235}
+  m_LocalPosition: {x: -0.22000003, y: 1.47, z: 0.07311365}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1065662255747170615}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 53.59}
 --- !u!1 &2123139464
 GameObject:
   m_ObjectHideFlags: 0
@@ -3783,6 +3816,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   animator: {fileID: 6491913700987384211}
+  whoCanOpen: 0
 --- !u!212 &150802953268865269
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -4151,6 +4185,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
+  - {fileID: 2116489277}
   - {fileID: 2178118166994874367}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -8117,6 +8152,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   animator: {fileID: 6491913701438405644}
+  whoCanOpen: 1
 --- !u!212 &8880890978940214816
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -8427,8 +8463,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   highlight: {fileID: 1127101254343119421}
-  arrowPrefab: {fileID: 2064756437241058805}
-  spawnPoint: {fileID: 0}
+  arrowPrefab: {fileID: 7907720046717811147, guid: f9e594c80aae57547813f7fa7e3b995a, type: 3}
+  spawnPoint: {fileID: 2116489277}
 --- !u!1001 &9099071394577939861
 PrefabInstance:
   m_ObjectHideFlags: 0
